@@ -1,0 +1,35 @@
+{% extends "App/base.html"%}
+
+{%load static %}
+
+{%block main%}
+
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Sobre mi primer proyecto</h2>
+                <p class="text-white-50">
+                    Esta es mi primera WEB, del curso de Python<br>
+                    Esta desarrollada con Python, Django, CSS y JavaScript
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects-->
+<section class="projects-section bg-light" id="projects">
+    <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'App/assets/img/bg-masthead.jpg' %}" alt="..." /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Breve descripción</h4>
+                    <p class="text-black-50 mb-0">Al ser el primer proyecto es muy simple, cree las bases del proyecto, para luego importar un template. Luego hice las correcciones nesecarias para poder utilizarlo</p>
+                </div>
+            </div>
+        </div>
+        
+
+{%endblock main%}
