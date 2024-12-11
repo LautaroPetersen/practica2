@@ -4,11 +4,11 @@
 
 
 {% block main %}
-<section class="about-section text-center" id="about">
+<section class="about-section text-center">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <h2 class="text-white-50 mx-auto mt-2 mb-5">Buscar una  categoría.</h2>
-            <form action="" method="POST">
+            <form action="" method="POST" style="color: white;">
 
                 {% csrf_token %}
         
@@ -23,7 +23,7 @@
             </div>
         </div>        
     </div> 
-</section>
+</section> 
 
 
 {% endblock main %}
