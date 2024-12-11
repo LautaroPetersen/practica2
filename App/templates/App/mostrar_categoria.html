@@ -1,0 +1,22 @@
+{% extends 'App/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Categorías</h2>
+            <ul style="list-style-type: none; padding: 0; margin: 0;"> <!-- Opcional para limpiar los estilos -->
+                {% for categoria in categorias %}
+                    <li style="color: white; font-size: 20px; margin-bottom: 10px;">
+                        categoría: {{ categoria.nombre }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock main %}

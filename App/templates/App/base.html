@@ -31,7 +31,20 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="{% url 'About' %}">Sobre mi</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'Projects' %}">Proyecto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'Signup' %}">Contacto</a></li>
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Formularios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="{% url 'CargarCategoria' %}">Cargar Categoría</a></li>
+                                <li><a class="dropdown-item" href="{% url 'CargarSubCategoria' %}">Cargar Sub Categoría</a></li>
+                                <li><a class="dropdown-item" href="{% url 'CargarProducto' %}">Cargar Producto</a></li>
+                                <li><a class="dropdown-item" href="{% url 'FormBuscarCategoria' %}">Buscar Categoría</a></li>
+                            </ul>
+                        </div>
+                        
+
+                        <li class="nav-item"><a class="nav-link" href="{% url 'Signup' %}">Contacto</a></li>                      
                     </ul>
                 </div>
             </div>
@@ -44,7 +57,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!-- script src="js/scripts.js"></script>-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

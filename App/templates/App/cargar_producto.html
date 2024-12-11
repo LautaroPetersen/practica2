@@ -1,0 +1,27 @@
+{% extends 'App/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">Cargar un nuevo prodcuto.</h2>
+
+            <!-- En este ejemplo dejamos el action vacío ya que lo manejamos desde la vista -->
+             <form action="" method="POST">
+            {% csrf_token %}
+        
+            <table>
+                {{ miFormulario.as_table }}
+            </table>
+            <input type="submit" value="Enviar">
+
+        </form>
+            </div>
+        </div>        
+    </div>
+</section>
+
+{% endblock main %}
